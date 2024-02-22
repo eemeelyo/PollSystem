@@ -1,0 +1,31 @@
+body {
+    background-color: lightgrey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: cardWelcome 1s ease-in-out;
+}
+
+@keyframes cardWelcome {
+       0% {
+        transform: scale(0);
+        opacity: 0;
+       }
+       100% {
+        transform: scale(1);
+        opacity: 1;
+       }
+}
+
