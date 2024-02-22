@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poll System</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        
+      <h1>Poll System</h1>
+      <div class="poll">
+        <h2>What is your favorite programming language?</h2>
+        <div class="choices">
+            <div class="choice">
+                <input type="radio" id="choice1" name="poll" value="choice1">
+                <label for="choice1">JavaScript</label>
+            </div>
+            <div class="choice">
+                <input type="radio" id="choice2" name="poll" value="choice2">
+                <label for="choice2">Python</label>
+            </div>
+            <div class="choice">
+                <input type="radio" id="choice3" name="poll" value="choice3">
+                <label for="choice3">Java</label>
+            </div>
+            <div class="choice">
+                <input type="radio" id="choice4" name="poll" value="choice4">
+                <label for="choice4">C++</label>
+            </div>
+        </div>
+        <button onclick=submitVote()>Submit Vote</button>
+        <div id="result"></div>
+      </div>
+      <div class="result"></div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
