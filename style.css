@@ -29,3 +29,69 @@ body {
        }
 }
 
+h1 {
+    color: rgb(12, 163, 148);
+    font-size: 32px;
+    opacity: 1;
+}
+
+.poll {
+    margin-top: 20px;
+}
+
+h2 {
+    color:rgb(12, 163, 148);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice {
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    background-color: rgb(240, 233, 233);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice {
+    color: black;
+}
+
+.choice:hover {
+    background-color: rgb(12, 163, 148);
+}
+
+.choice input[type="radio"]:checked + label {
+    background-color: rgb(12, 163, 148);
+    color: #fff;
+}
+
+button {
+    background-color: rgb(12, 163, 148);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(12, 163, 148);
+}
